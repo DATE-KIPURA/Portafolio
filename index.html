@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-nav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/img/logo.jpg"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            loading="lazy"
+          />
+          Mi Portafolio
+        </a>
+        
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#content">API</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Ajuste de margen superior para evitar que el contenido quede detrás de la navbar fija -->
+    <style>
+      body {
+        padding-top: 56px; /* Altura de la navbar fija */
+      }
+    </style>
+
+    <!-- Sobre mí -->
+    <section id="about" class="py-5 bg-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-about">
+            <h2>Sobre mí</h2>
+            <p>
+              ¡Hola! Soy Diego Aravena, un estudiante de ingeniería en
+              informática apasionado por la tecnología y la innovación.
+              Actualmente estoy cursando mi segundo año en Duoc UC. A lo largo
+              de mi trayectoria académica, he desarrollado habilidades
+              medianamente sólidas en programación, especialmente en lenguajes
+              como Java, Python y JavaScript. Mi capacidad para comprender y
+              resolver problemas complejos me ha permitido destacarme en
+              proyectos donde he contribuido. Como futuro ingeniero en
+              informática, estoy emocionado por las oportunidades que ofrece
+              este campo en constante evolución. Estoy seguro de que mi pasión
+              por la tecnología, mi habilidad para programar y mi capacidad para
+              resolver problemas serán activos valiosos para Scualquier equipo o
+              proyecto en el que participe en el futuro.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <!-- Aquí puedes agregar una imagen tuya -->
+            <img
+              id="clickableImage"
+              src="./assets/img/logo.jpg"
+              class="img-fluid rounded-circle"
+              alt="Perfil"
+              width="450"
+              height="450"
+            />
+          </div>
+        </div>
+      </div>
+      <audio id="soundEffect" src="./assets/sound/risita.m4a"></audio>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portfolio" class="py-5 bg-portfolio text-about">
+      <div class="container">
+        <h2 class="text-center">Portafolio</h2>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="card">
+              <img
+                src="./assets/img/proyecto 1_JuegoDinoChrome.png"
+                class="card-img-top"
+                alt="Proyecto 1"
+              />
+              <div class="card-body text-black">
+                <h5 class="card-title">Proyecto 1: JuegoDinoChrome</h5>
+                <p class="card-text">
+                  JuegoDinoChrome presenta al clásico dinosaurio de Google
+                  Chrome, pero esta vez ¡está vestido con un elegante smoking!
+                  ¿La razón? Quiere conseguir trabajo y está decidido a hacerlo
+                  con estilo. Únete a este elegante dinosaurio en su búsqueda de
+                  empleo mientras navegas por un mundo en constante cambio lleno
+                  de obstáculos y desafíos. Salta, esquiva y corre a través de
+                  este emocionante viaje mientras el dinosaurio con smoking se
+                  abre camino hacia nuevas oportunidades laborales. Con gráficos
+                  retro y una jugabilidad adictiva, JuegoDinoChrome te ofrece
+                  una experiencia única llena de diversión y aventuras.
+                  ¡Prepárate para ayudar al dinosaurio a alcanzar sus metas
+                  profesionales mientras te diviertes en el camino!
+                </p>
+                <a id="playButton" href="./dinosaurio_chrome/index.html" class="btn btn-danger" target="_blank">Jugar</a>
+                <audio id="soundEffect2" src="./assets/sound/coin.m4a"></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="py-5 bg-contacto">
+      <div class="container">
+        <h2 class="text-center text-about">Contacto</h2>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <form id="contactForm">
+              <div class="form-group text-about">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="form-group text-about">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="form-group text-about">
+                <label for="message">Mensaje</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Botón -->
+    <section class="py-5 bg-boton">
+      <div class="container text-center">
+        <button id="caidaBtn" class="btn btn-danger">¡Magic Button!</button>
+      </div>
+    </section>
+    <audio id="buttonSound" src="./assets/sound/magic.m4a"></audio>
+    <!-- Usando Api -->
+    <div id="content" class="container text-center text-about mt-5">
+      <h1>Imágenes de Perros</h1>
+      <div id="dog" class="my-4"></div>
+      <button id="fetchButton" class="btn btn-danger">Obtener Imagen de Perro usando una API</button>
+    </div>
+    
+    <!-- Bootstrap JS y JQuery (Necesario para el funcionamiento de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Tu script personalizado en JavaScript -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

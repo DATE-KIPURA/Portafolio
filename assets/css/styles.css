@@ -1,0 +1,46 @@
+/* Agrega tus estilos personalizados aquí */
+@keyframes gravity {
+  0% {
+    transform: translateY(-100%);
+  }
+  25% {
+    transform: translateY(50%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(25%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate__falling {
+  animation: gravity 2s ease;
+}
+.bg-nav {
+  background-color: #003C43; /* Reemplaza "your-color" por el color deseado */
+}
+.bg-about {
+  background-color: #135D66; /* Reemplaza "your-color" por el color deseado */
+}
+.text-about {
+  color: #ffffff; /* Reemplaza "your-color" por el color deseado */
+}
+.bg-portfolio {
+  background-color: #15636d; /* Reemplaza "your-color" por el color deseado */
+}
+.bg-contacto {
+  background-color: #156670;
+}
+.bg-boton {
+  background-color: #156670;
+}
+body {
+  background-color: #77B0AA; /* Reemplaza "your-color" por el color deseado */
+}
+.text-black {
+  color: #000;
+}
